@@ -4,15 +4,24 @@
     {
         static void Main(string[] args)
         {
-            Hotel hotel1 = new Hotel("Hotel XYZ", "123 rue de la Paix");
-            Client client1 = new Client("Dupont", "Pierre", "pierre.dupont@example.com", "1234 5678 9012 3456", 101);
-            hotel1.AjouterClient(client1);
+            Console.WriteLine("Donnez le nom du Client svp : ");
+            string nomClient = Console.ReadLine();
+
+            Console.WriteLine("Donnez le prenom du Client svp : ");
+            string prenomClient = Console.ReadLine();
+
+            Console.WriteLine("Donnez le courriel du Client svp : ");
+            string courrielClient = Console.ReadLine();
+
+            Console.WriteLine("Donnez le numero de carte credit du Client svp : ");
+            string numCarteCreditClient = Console.ReadLine();
+
+            Console.WriteLine("Donnez le numero du chambre du Client svp : ");
+            int numeroChambre = Int32.Parse(Console.ReadLine());
 
 
 
-            Console.WriteLine(client1.Nom); 
-            Console.WriteLine(client1.NumeroChambre);
-            Console.WriteLine(hotel1.Clients.Count);
+            Client client2 = new Client(nomClient, prenomClient, courrielClient, numCarteCreditClient, numeroChambre);
         }
     }
 }
