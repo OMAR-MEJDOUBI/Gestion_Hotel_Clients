@@ -30,12 +30,15 @@ namespace Gestion_Hotel_Clients
 
         }
 
+
+        
+    
+
         public override string ToString()
         {
             string clientInfo = string.Format("Le nom de client est {0}" + ", son prenom est {1}" + ", son numero de reservation est {2}" + " et son numero de chambre c'est: {3}", Nom, Prenom, NumeroReservation, NumeroChambre );
             return clientInfo;
         }
-
 
     }
 }
