@@ -20,8 +20,11 @@
             int numeroChambre = Int32.Parse(Console.ReadLine());
 
 
-
             Client client2 = new Client(nomClient, prenomClient, courrielClient, numCarteCreditClient, numeroChambre);
+
+            Console.WriteLine(client2);
+
         }
+        
     }
 }
