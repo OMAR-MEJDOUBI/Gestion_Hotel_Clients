@@ -10,9 +10,8 @@
 
 
 
-            Console.WriteLine(client1.Nom); 
-            Console.WriteLine(client1.NumeroChambre);
-            Console.WriteLine(hotel1.Clients.Count);
+            Console.WriteLine(client1);
         }
+        
     }
 }
